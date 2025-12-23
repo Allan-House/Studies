@@ -4,7 +4,7 @@ Personal repository for my journey through computer science fundamentals and sof
 ## Algorithms
 - [X] Binary Search
 - [ ] Selection Sort
-- [ ] Bubblue Sort
+- [ ] Bubble Sort
 - [ ] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
@@ -14,4 +14,3 @@ Personal repository for my journey through computer science fundamentals and sof
 - [ ] Linked List
 - [ ] Queue
 - [ ] Stack
-- [ ] Hash Table

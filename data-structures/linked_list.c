@@ -305,6 +305,74 @@ const char* list_status_to_string(ListStatus status) {
 
 int main() {
   Node *head = NULL;
+  ListStatus status;
+  int value;
 
+  printf("===== push_back test =====\n");
+  status = push_back(&head, 10);
+  printf("push_back(10): %s\n", list_status_to_string(status));
+
+  status = push_back(&head, 20);
+  printf("push_back(20): %s\n", list_status_to_string(status));
+
+  status = push_back(&head, 30);
+  printf("push_back(30): %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== push_front test =====\n");
+  status = push_front(&head, 5);
+  printf("push_front(5): %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== insertion test =====\n");
+  status = insertion(&head, 2, 15);
+  printf("insertion(index=2, value=15): %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== front and back test =====\n");
+  status = front(head, &value);
+  printf("front: %s (value=%d)\n", list_status_to_string(status), value);
+
+  status = back(head, &value);
+  printf("back: %s (value=%d)\n", list_status_to_string(status), value);
+
+  printf("\n===== get test =====\n");
+  status = get(head, 2, &value);
+  printf("get(index=2): %s (value=%d)\n", list_status_to_string(status), value);
+
+  printf("\n===== pop_front test =====\n");
+  status = pop_front(&head);
+  printf("pop_front: %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== pop_back test =====\n");
+  status = pop_back(&head);
+  printf("pop_back: %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== deletion test =====\n");
+  status = deletion(&head, 1);
+  printf("deletion(index=1): %s\n", list_status_to_string(status));
+
+  print_list(head);
+
+  printf("\n===== error cases test =====\n");
+  status = get(head, 10, &value);
+  printf("get(index=10): %s\n", list_status_to_string(status));
+
+  status = deletion(&head, -1);
+  printf("deletion(index=-1): %s\n", list_status_to_string(status));
+
+  printf("\n===== freeing list =====\n");
+  free_list(&head);
+
+  if (head == NULL) {
+    printf("List freed successfully.\n");
+  }
   return 0;
 }
