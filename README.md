@@ -2,15 +2,23 @@
 Personal repository for my journey through computer science fundamentals and software engineering concepts.
 
 ## Algorithms
+
+### Searching Algorithms
 - [X] Binary Search
-- [ ] Selection Sort
+
+### Sorting Algorithms
 - [ ] Bubble Sort
+- [ ] Selection Sort
 - [ ] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Heap Sort
 
+### Graph Algorithms
+- [ ] Breadth-First Search
+- [ ] Depth-First Search
+
 ## Data Structures
-- [ ] Linked List
+- [X] Linked List
 - [ ] Queue
 - [ ] Stack
