@@ -31,7 +31,26 @@ Personal repository for my journey through computer engineering  fundamentals an
 
 ## C++
 
-TODO: add C++ libraries.
+### Utilities
+- [ ] `memory` — smart pointers.
+- [ ] `string` — string manipulation and operations.
+- [ ] `filesystem` — file system operations.
+- [ ] `fstream` — file I/O streams.
+- [ ] `algorithm` — sorting, searching, and range operations.
+- [ ] `chrono` — time measurement and duration.
+
+### Containers
+- [ ] `array` — fixed-size stack-allocated array.
+- [ ] `vector` — dynamic array.
+- [ ] `list` — doubly linked list.
+- [ ] `map` — sorted key-value store.
+- [ ] `unordered_map` — hash-based key-value store.
+
+### Concurrency
+- [ ] `thread` — thread creation and management.
+- [ ] `mutex` — mutual exclusion.
+- [ ] `condition_variable` — thread synchronization.
+- [ ] `atomic` — lock-free atomic operations.
 
 ## Python
 
