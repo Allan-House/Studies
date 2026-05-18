@@ -27,7 +27,6 @@ plt.savefig('squares_line.png')
 plt.show()
 
 # --- Scatter Plot ---
-
 fig_2, ax_2 = plt.subplots()
 
 ax_2.scatter(x_values, y_values)
@@ -38,4 +37,17 @@ ax_2.set_ylabel("Square of Value", fontsize=14)
 ax_2.tick_params(labelsize=14)
 
 plt.savefig('squares_scatter.png')
+plt.show()
+
+# --- Bar Plot ---
+fig_3, ax_3 = plt.subplots()
+
+ax_3.bar(x_values, y_values)
+
+ax_3.set_title("Square Numbers (Bar)", fontsize=20)
+ax_3.set_xlabel("Value", fontsize=14)
+ax_3.set_ylabel("Square of Value", fontsize=14)
+ax_3.tick_params(labelsize=14)
+
+plt.savefig('squares_bar.png')
 plt.show()
