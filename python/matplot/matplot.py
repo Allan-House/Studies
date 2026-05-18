@@ -13,7 +13,7 @@ fig, ax = plt.subplots()
 ax.plot(x_values, y_values)
 
 # Set chart title and label axes.
-ax.set_title("Square Numbers", fontsize=20)
+ax.set_title("Square Numbers (Line)", fontsize=20)
 ax.set_xlabel("Value", fontsize=14)
 ax.set_ylabel("Square of Value", fontsize=14)
 
@@ -21,7 +21,21 @@ ax.set_ylabel("Square of Value", fontsize=14)
 ax.tick_params(labelsize=14)
 
 # savefig(): Save the current figure as an image or vector graphic to a file.
-plt.savefig('squares.png')
+plt.savefig('squares_line.png')
 
 # show(): Display the figure window.
+plt.show()
+
+# --- Scatter Plot ---
+
+fig_2, ax_2 = plt.subplots()
+
+ax_2.scatter(x_values, y_values)
+
+ax_2.set_title("Square Numbers (Scatter)", fontsize=20)
+ax_2.set_xlabel("Value", fontsize=14)
+ax_2.set_ylabel("Square of Value", fontsize=14)
+ax_2.tick_params(labelsize=14)
+
+plt.savefig('squares_scatter.png')
 plt.show()
